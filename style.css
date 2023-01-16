@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(247, 245, 241);
+}
+.logo {
+    position: relative;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    top: 40px;
+    left: 40px;
+}
+.inside {
+    position: absolute;
+    background-color: rgb(247, 245, 241) ;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    margin: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+.header ul {
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 40px;
+  
+}
+.header li {
+    padding-left: 40px;
+    padding-right:40px ;
+    list-style: none;
+    border-right: 2px black solid;
+}
+.header li:last-child {
+    border: none;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.box {
+    margin-left: 100px;
+    
+}
+.box h1 {
+    margin-bottom: 70px;
+}
+
+.box h5 {
+    padding-top: 10px;
+}
+.iban, .social{
+    margin-top: 20px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 400px ; 
+    position: relative;
+    
+    
+}
+.login h1, label {
+    margin-bottom: 40px;
+   
+}
+.login input, textarea{
+    height: 30px;
+    border-bottom: 3px black solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    resize: none;
+    background-color: rgb(247, 245, 241);
+    
+}
+.login textarea {
+    height: 100px;
+}
+.social a {
+     color: #262626 ;
+}
+.envoyer {
+   width: 157px;
+   height: 48px;
+   background-color:#FF7600 ;
+   border-radius: 5px;
+   text-align: center;
+   padding-top: 10px;
+   display: flex;
+   margin-top: 400px;
+   margin-left: 770px;
+   position: absolute;
+}
+.envoyer h3 {
+    border-left: 2px white solid;
+    color: aliceblue;
+  
+    
+}
+.envoyer div {
+    width : 100px;
+    margin-left: 40px;
+}
+
+@media (max-width:700px) {
+     .contact {
+        display: flex;
+        flex-direction: column;
+
+     }
+     .box {
+        margin-left: 50px;
+     }
+     .header {
+        display: none;
+     }
+     .envoyer {
+        position: relative;
+        margin-left: 50px;
+        margin-top: 50px;
+     }
+     .login {
+        margin-left:50px ;
+        margin-top: 30px;
+     }
+}
